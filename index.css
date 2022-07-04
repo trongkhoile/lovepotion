@@ -98,7 +98,45 @@ body {
   flex-direction: row;
   width: 100%;
 }
+#loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./img/background.JPG");
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000;
+}
 
+.loader-inner {
+  bottom: 0;
+  height: 60px;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100px;
+}
+
+.img_rotate {
+  animation: spin 2000ms cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite;
+  animation-delay: 50ms;
+}
+@keyframes spin {
+  0%,
+  15% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
 @media screen and (max-width: 2560px) and (min-width: 1441px) {
   body {
     background-image: url("./img/background.JPG");
@@ -107,6 +145,21 @@ body {
     margin: 0px;
     padding: 0px;
     border: 0px;
+  }
+  #loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: 2560px 2500px;
+    background-image: url("./img/background.JPG");
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000;
   }
   .non_responsive {
     display: none;
@@ -151,6 +204,7 @@ body {
     display: none;
   }
 }
+
 @media screen and (max-width: 1440px) and (min-width: 1025px) {
   .rule_box {
     width: 950px;
@@ -183,6 +237,7 @@ body {
     display: none;
   }
 }
+
 @media screen and (max-width: 1024px) and (min-width: 769px) {
   .rule_box {
     width: 900px;
