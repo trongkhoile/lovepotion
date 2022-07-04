@@ -102,7 +102,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("./img/background.JPG");
+  background-color: #000033;
   bottom: 0;
   left: 0;
   overflow: hidden;
