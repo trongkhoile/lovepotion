@@ -14,6 +14,7 @@ html,
 body {
   width: 100%;
   height: 100%;
+  cursor: url(https://cur.cursors-4u.net/symbols/sym-7/sym780.cur), auto !important;
 }
 body {
   background-image: url("./img/background.JPG");
@@ -29,6 +30,19 @@ body {
 }
 
 .box_button {
+  width: 190px;
+  background-image: url("./img/nút start.PNG");
+  background-repeat: no-repeat;
+  background-size: 190px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Yoshida;
+  color: #e445e3;
+  padding-bottom: 65px;
+  text-shadow: #905fc9 -1px -2px 0.5em;
+}
+.box_button:hover {
   width: 190px;
   background-image: url("./img/nút start.PNG");
   background-repeat: no-repeat;
@@ -125,7 +139,7 @@ body {
 
 .img_rotate {
   animation: spin 2000ms cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite;
-  animation-delay: 50ms;
+  animation-delay: 40ms;
 }
 @keyframes spin {
   0%,
@@ -176,6 +190,21 @@ body {
     align-items: center;
     font-family: Yoshida;
     color: #e445e3;
+    text-shadow: #905fc9 -1px -2px 0.5em;
+  }
+  .box_button:hover {
+    width: 300px;
+    height: 150px;
+    background-image: url("./img/nút start.PNG");
+    background-repeat: no-repeat;
+    background-size: 300px 150px;
+    display: flex;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+    font-family: Yoshida;
+    color: #e445e3;
+    text-shadow: #e445e3 -1px -2px 0.5em;
   }
   .rule_box {
     width: 1400px;
